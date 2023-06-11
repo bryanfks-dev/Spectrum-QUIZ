@@ -1,5 +1,5 @@
 # Spectrum QUIZ
-An Augmented Reality App for Human Computer Intercation Course
+Augmented Reality App for Human Computer Intercation Course
 
 3D Model + Texture: https://www.turbosquid.com/3d-models/fur-boy-teen-full-rigged-in-blender-3d-model-1904780
 
