@@ -1,5 +1,5 @@
 # Spectrum QUIZ
-Augmented Reality App for Human Computer Intercation Course
+Game Based  Augmented Reality App for Human Computer Interaction Course
 
 Software: Unity Editor 2021.3.21f1, Blender 3.0.1, Visual Studio 2022, Adobe Illustrator, Adobe Photoshop
 
