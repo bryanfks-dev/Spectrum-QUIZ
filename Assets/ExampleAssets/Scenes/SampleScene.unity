@@ -1970,7 +1970,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 388525029}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2047,9 +2047,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inGameSection: {fileID: 1876741359}
+  lightDimLayer: {fileID: 1429965926}
   spawn_prefabs: {fileID: 5661755022629670707, guid: e05c1cfffb5d77647852173c0ec51dec,
     type: 3}
   spawned_object: {fileID: 0}
+  cam: {fileID: 22732920}
   object_spawned: 0
   arr: {fileID: 0}
   fixedPose:

@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
             Destroy(modelRenderer.spawned_object);
 
             modelRenderer.spawned_object = Instantiate(modelRenderer.spawn_prefabs, modelRenderer.fixedPose.position, modelRenderer.fixedPose.rotation);
+
+            modelRenderer.spawned_object.transform.LookAt(new Vector3(modelRenderer.cam.transform.position.x, modelRenderer.fixedPose.position.y, modelRenderer.cam.transform.position.z));
         }
 
         // Set options for current question

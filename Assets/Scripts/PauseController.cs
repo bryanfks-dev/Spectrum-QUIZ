@@ -22,6 +22,7 @@ public class PauseController : MonoBehaviour
     // Exit to main menu method
     public void toMainMenu()
     {
+        // Reset scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

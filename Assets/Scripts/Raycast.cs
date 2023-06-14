@@ -6,9 +6,12 @@ using UnityEngine.XR.ARSubsystems;
 public class Raycast : MonoBehaviour
 {
     public GameObject inGameSection;
+    public GameObject lightDimLayer;
 
     public GameObject spawn_prefabs;
     public GameObject spawned_object;
+
+    public Camera cam;
 
     public bool object_spawned;
 
@@ -29,7 +32,7 @@ public class Raycast : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (inGameSection.activeSelf)
+        if (inGameSection.activeSelf && !lightDimLayer.activeSelf)
         {
             // Check touch input from screen
             if (Input.touchCount > 0)
@@ -46,6 +49,9 @@ public class Raycast : MonoBehaviour
 
                         // Render object
                         spawned_object = Instantiate(spawn_prefabs, hitPose.position, hitPose.rotation);
+
+                        // Rotate object to camera position
+                        spawned_object.transform.LookAt(new Vector3(cam.transform.position.x, hitPose.position.y, cam.transform.position.z));
                         object_spawned = true;
 
                         fixedPose = hitPose;
